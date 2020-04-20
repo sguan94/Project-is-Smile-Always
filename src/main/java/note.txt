@@ -1,0 +1,13 @@
+Project Service & Project Controller
+    2 things: working on service layer, and then working on controller layer
+    2 packages: services () and web (where we are going to put controllers)
+    why are we going to create a service layer?
+        People usually put autowired the repository straight into the controller,
+        for simple scenarios that might be for a game.
+        However, what that usually does and the problem they usually get into whenever you do this is that
+        you end up putting way too much logic in the controller. That's in my opinion not a good practice.
+        You always want to hae your logic abstracted from the controller as much as you can obviously.
+        And then tou only pretty much just want the controller to be a router rather than a place that
+        holds your logic.
+        So this is why I want to always use a service layer that talks to the repository rather than having
+        a bunch of logic on the controller layer.
